@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="cardlist">
+  <div class="board" id="board">
+    <div class="column" id="column1" ondrop="drop(event, 'column1')" ondragover="allowDrop(event)">
+      <h5>Not started (<span id="column1Count">0</span>)</h5>
+      <div class="cards" id="column1Cards"></div>
+      <div class="add-card" onclick="addCard('column1')">+ New</div>
+    </div>
+    <div class="column" id="column2" ondrop="drop(event, 'column2')" ondragover="allowDrop(event)">
+      <h5>In progress (<span id="column2Count">0</span>)</h5>
+      <div class="cards" id="column2Cards"></div>
+      <div class="add-card" onclick="addCard('column2')">+ New</div>
+    </div>
+    <div class="column" id="column3" ondrop="drop(event, 'column3')" ondragover="allowDrop(event)">
+      <h5>Completed (<span id="column3Count">0</span>)</h5>
+      <div class="cards" id="column3Cards"></div>
+      <div class="add-card" onclick="addCard('column3')">+ New</div>
+    </div>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
